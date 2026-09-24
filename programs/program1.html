@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اسم البرنامج - موقعي</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .program-hero {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .program-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .program-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .program-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        .section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .features {
+            list-style: none;
+        }
+        .features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .features li:before {
+            content: "✓";
+            color: #27ae60;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+        .download-section {
+            text-align: center;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+        }
+        .download-btn {
+            display: inline-block;
+            background: white;
+            color: #2980b9;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+        .download-btn:hover {
+            transform: scale(1.05);
+        }
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .screenshot {
+            background: #f0f0f0;
+            height: 200px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+        }
+        .contact-program {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+        .contact-program h2 {
+            color: white;
+            border-bottom-color: #3498db;
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .contact-link {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .contact-link:hover {
+            background: white;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <h1 class="logo">اسمك أو اسم البراند</h1>
+            <nav>
+                <a href="../index.html#home">الرئيسية</a>
+                <a href="../index.html#programs">البرامج</a>
+                <a href="../index.html#contact">تواصل معنا</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PROGRAM HERO -->
+    <section class="program-hero">
+        <h1>اسم البرنامج</h1>
+        <p>وصف مختصر عن البرنامج ومميزاته الرئيسية</p>
+    </section>
+
+    <!-- PROGRAM CONTENT -->
+    <div class="program-content">
+        <!-- About -->
+        <div class="section">
+            <h2>عن البرنامج</h2>
+            <p>هنا تكتب شرح تفصيلي عن البرنامج. ما هو البرنامج؟ ماذا يفعل؟ لماذا يحتاجه المستخدم؟</p>
+            <p>يمكنك إضافة فقرات إضافية هنا لشرح ميزات البرنامج بالتفصيل.</p>
+        </div>
+
+        <!-- Features -->
+        <div class="section">
+            <h2>المميزات</h2>
+            <ul class="features">
+                <li>مميزة 1 - وصف الميزة</li>
+                <li>مميزة 2 - وصف الميزة</li>
+                <li>مميزة 3 - وصف الميزة</li>
+                <li>مميزة 4 - وصف الميزة</li>
+                <li>مميزة 5 - وصف الميزة</li>
+            </ul>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="section">
+            <h2>صور من البرنامج</h2>
+            <div class="screenshots">
+                <div class="screenshot">صورة 1</div>
+                <div class="screenshot">صورة 2</div>
+                <div class="screenshot">صورة 3</div>
+            </div>
+        </div>
+
+        <!-- Download -->
+        <div class="download-section">
+            <h2>حمّل النسخة المجانية</h2>
+            <p>جرّب البرنامج مجاناً قبل الشراء</p>
+            <a href="#" class="download-btn">⬇ تحميل مجاني</a>
+        </div>
+
+        <!-- Contact -->
+        <div class="section contact-program">
+            <h2>تواصل معنا</h2>
+            <p>لأي استفسار أو دعم فني</p>
+            <div class="contact-links">
+                <a href="mailto:vaqenoo@gmail.com" class="contact-link">📧 البريد الإلكتروني</a>
+                <a href="https://wa.me/966548994259" class="contact-link">📱 واتساب</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>© 2026 جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+</body>
+</html>

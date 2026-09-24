@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اطلب تصميم برنامجك - حلول ذكية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo-area">
+                <div class="logo-text">
+                    <span class="logo-title">حلول ذكية</span>
+                    <span class="logo-sub">برامج لحل مشاكلك</span>
+                </div>
+                <div class="logo-icon">
+                    <svg width="50" height="50" viewBox="0 0 100 100">
+                        <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" fill="none" stroke="#0ea5e9" stroke-width="4"/>
+                        <polygon points="50,20 80,37.5 80,62.5 50,80 20,62.5 20,37.5" fill="#0ea5e9" opacity="0.3"/>
+                        <polygon points="50,30 70,42 70,58 50,70 30,58 30,42" fill="#0ea5e9"/>
+                    </svg>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html#home">الرئيسية</a>
+                <a href="programs.html">البرامج</a>
+                <a href="index.html#about">عن الموقع</a>
+                <a href="index.html#contact">اتصل بنا</a>
+            </nav>
+            <div id="auth-section">
+                <a href="login.html" class="login-btn">تسجيل الدخول <span>👤</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- طلب تصميم برنامج -->
+    <section class="request-page">
+        <div class="container">
+            <div class="service-top">
+                <h2>💡 عندك فكرة برنامج؟</h2>
+                <p class="service-subtitle">حوّل فكرتك إلى برنامج يخدم احتياجك</p>
+                <p class="service-desc">عندك فكرة تطبيق أو برنامج يحل مشكلة معينة؟ أرسل لنا فكرتك، وسنساعدك في تحويلها إلى برنامج عملي ومتكامل.</p>
+            </div>
+
+            <div class="request-layout">
+                <div class="request-form-box">
+                    <div class="modal-header">
+                        <h2>اطلب تصميم برنامجك</h2>
+                    </div>
+                    <form id="designRequestForm" method="POST" action="https://formspree.io/f/meaqddee">
+                        <input type="hidden" name="_subject" value="طلب تصميم برنامج - حلول ذكية">
+                        <div class="form-group">
+                            <label>اسمك</label>
+                            <input type="text" id="customerName" name="الاسم" required>
+                        </div>
+                        <div class="form-group">
+                            <label>رقم التواصل / واتساب</label>
+                            <input type="text" id="customerPhone" name="رقم التواصل" required>
+                        </div>
+                        <div class="form-group">
+                            <label>البريد الإلكتروني <span class="optional">— اختياري</span></label>
+                            <input type="email" id="customerEmail" name="البريد الإلكتروني">
+                        </div>
+                        <div class="form-group">
+                            <label>نوع البرنامج</label>
+                            <select id="programType" name="نوع البرنامج">
+                                <option value="mobile">تطبيق جوال</option>
+                                <option value="desktop">برنامج كمبيوتر</option>
+                                <option value="web">موقع إلكتروني</option>
+                                <option value="management">نظام إدارة</option>
+                                <option value="other">غير ذلك</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>اشرح لنا فكرة البرنامج</label>
+                            <textarea id="programIdea" name="فكرة البرنامج" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>ما المشكلة التي تريد أن يحلها البرنامج؟</label>
+                            <textarea id="programProblem" name="المشكلة" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>هل لديك تصميم أو مثال مشابه؟</label>
+                            <textarea id="programExample" name="مثال مشابه" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>الميزانية المتوقعة <span class="optional">— اختياري</span></label>
+                            <input type="text" id="budget" name="الميزانية">
+                        </div>
+                        <div class="form-group">
+                            <label>موعد التنفيذ المطلوب <span class="optional">— اختياري</span></label>
+                            <input type="text" id="deadline" name="موعد التنفيذ">
+                        </div>
+                        <button type="submit" class="btn-primary submit-btn">إرسال الطلب</button>
+                        <div id="formMsg" class="form-msg" style="display:none;"></div>
+                    </form>
+                </div>
+
+                <!-- مراحل العمل -->
+                <div class="workflow">
+                    <div class="workflow-title">
+                        <h3>صمّم برنامجك الخاص</h3>
+                        <p>من الفكرة إلى برنامج جاهز للاستخدام</p>
+                    </div>
+                    <div class="workflow-steps">
+                        <div class="step"><span>1</span><p>فكرة العميل</p></div>
+                        <div class="step-arrow">↓</div>
+                        <div class="step"><span>2</span><p>تحليل الفكرة</p></div>
+                        <div class="step-arrow">↓</div>
+                        <div class="step"><span>3</span><p>تصميم الواجهات</p></div>
+                        <div class="step-arrow">↓</div>
+                        <div class="step"><span>4</span><p>البرمجة</p></div>
+                        <div class="step-arrow">↓</div>
+                        <div class="step"><span>5</span><p>الاختبار</p></div>
+                        <div class="step-arrow">↓</div>
+                        <div class="step"><span>6</span><p>التسليم</p></div>
+                        <div class="step-arrow">↓</div>
+                        <div class="step"><span>7</span><p>الدعم</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>© 2026 جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            var user = JSON.parse(localStorage.getItem('loggedInUser'));
+            var section = document.getElementById('auth-section');
+            if (user && user.fullname) {
+                section.innerHTML = '<span class="welcome-msg">مرحباً ' + user.fullname + '</span> <button class="logout-btn" onclick="logout()">خروج</button>';
+            }
+        })();
+
+        function logout() {
+            localStorage.removeItem('loggedInUser');
+            window.location.href = 'index.html';
+        }
+    </script>
+
+    <script>
+        var FORMSPREE_ENDPOINT = 'https://formspree.io/f/meaqddee';
+
+        document.getElementById('designRequestForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            var form = this;
+            var msg = document.getElementById('formMsg');
+
+            var request = {
+                name: document.getElementById('customerName').value,
+                phone: document.getElementById('customerPhone').value,
+                email: document.getElementById('customerEmail').value,
+                type: document.getElementById('programType').value,
+                idea: document.getElementById('programIdea').value,
+                problem: document.getElementById('programProblem').value,
+                example: document.getElementById('programExample').value,
+                budget: document.getElementById('budget').value,
+                deadline: document.getElementById('deadline').value,
+                date: new Date().toISOString()
+            };
+
+            var requests = JSON.parse(localStorage.getItem('designRequests')) || [];
+            requests.push(request);
+            localStorage.setItem('designRequests', JSON.stringify(requests));
+
+            fetch(FORMSPREE_ENDPOINT, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            }).then(function(response) {
+                if (response.ok) {
+                    msg.textContent = 'تم إرسال طلبك بنجاح! سنتواصل معك قريباً.';
+                    msg.className = 'form-msg form-msg-success';
+                    msg.style.display = 'block';
+                    form.reset();
+                } else {
+                    msg.textContent = 'حدث خطأ في إرسال الطلب، حاول مرة أخرى.';
+                    msg.className = 'form-msg form-msg-error';
+                    msg.style.display = 'block';
+                }
+            }).catch(function() {
+                msg.textContent = 'حدث خطأ في الاتصال، حاول مرة أخرى.';
+                msg.className = 'form-msg form-msg-error';
+                msg.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>

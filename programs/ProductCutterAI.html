@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductCutterAI - قص المنتجات بالذكاء الاصطناعي</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="programs-page">
+    <!-- HEADER -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo-area">
+                <div class="logo-text">
+                    <span class="logo-title">حلول ذكية</span>
+                    <span class="logo-sub">برامج لحل مشاكلك</span>
+                </div>
+                <div class="logo-icon">
+                    <svg width="50" height="50" viewBox="0 0 100 100">
+                        <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" fill="none" stroke="#0ea5e9" stroke-width="4"/>
+                        <polygon points="50,20 80,37.5 80,62.5 50,80 20,62.5 20,37.5" fill="#0ea5e9" opacity="0.3"/>
+                        <polygon points="50,30 70,42 70,58 50,70 30,58 30,42" fill="#0ea5e9"/>
+                    </svg>
+                </div>
+            </div>
+            <nav>
+                <a href="../index.html">الرئيسية</a>
+                <a href="../programs.html" class="active">البرامج</a>
+                <a href="../request.html">طلب تصميم</a>
+                <a href="../index.html#contact">اتصل بنا</a>
+            </nav>
+            <div id="auth-section">
+                <a href="../login.html" class="login-btn">تسجيل الدخول <span>👤</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- PROGRAM HERO -->
+    <section class="program-hero-section" style="background: linear-gradient(135deg, #1e3a8a, #7c3aed);">
+        <div class="container program-hero-flex">
+            <div class="program-hero-text">
+                <span class="program-badge">البرنامج الثاني</span>
+                <h1>ProductCutterAI</h1>
+                <p class="program-hero-desc">قص الصور بالذكاء الاصطناعي — احذف خلفية المنتجات واحصل على صور احترافية للبيع الإلكتروني</p>
+                <div class="download-buttons">
+                    <a href="ProductCutterAI/ProductCutterAI_Setup.exe" class="btn-primary download-btn" download>
+                        ⬇ تحميل ويندوز
+                    </a>
+                </div>
+            </div>
+            <div class="program-hero-visual">
+                <div class="program-icon-large">✂️</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="program-features">
+        <div class="container">
+            <h2>مميزات البرنامج</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🤖</div>
+                    <h3>ذكاء اصطناعي</h3>
+                    <p>يكتشف المنتج تلقائياً ويقص الصورة بدقة عالية</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h3>سرعة فائقة</h3>
+                    <p>يعالج الصور في ثوانٍ معدودة بدون انتظار</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🖼️</div>
+                    <h3>خلفيات مخصصة</h3>
+                    <p>اختر لون الخلفية أو اجعلها شفافة حسب احتياجك</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📦</div>
+                    <h3>دعم جماعي</h3>
+                    <p>عالج عدة صور للمنتج في نفس الوقت</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="program-how">
+        <div class="container">
+            <h2>كيف يعمل؟</h2>
+            <div class="how-steps">
+                <div class="how-step">
+                    <span class="step-number">1</span>
+                    <h3>ارفع الصورة</h3>
+                    <p>اختر صورة المنتج من جهازك</p>
+                </div>
+                <div class="how-step">
+                    <span class="step-number">2</span>
+                    <h3>البرنامج يقصها</h3>
+                    <p>يكتشف المنتج ويحذف الخلفية تلقائياً</p>
+                </div>
+                <div class="how-step">
+                    <span class="step-number">3</span>
+                    <h3>احفظ النتيجة</h3>
+                    <p>احفظ الصورة النظيفة بالخلفية اللي تبيها</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-strip">
+        <div class="container">
+            <h3>💡 عندك فكرة برنامج؟</h3>
+            <p>حوّل فكرتك إلى برنامج عملي ومتكامل معنا</p>
+            <a href="../request.html" class="btn-primary">اطلب تصميم برنامجك</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>© 2026 جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            var user = JSON.parse(localStorage.getItem('loggedInUser'));
+            var section = document.getElementById('auth-section');
+            if (user && user.fullname) {
+                section.innerHTML = '<span class="welcome-msg">مرحباً ' + user.fullname + '</span> <button class="logout-btn" onclick="logout()">خروج</button>';
+            }
+        })();
+
+        function logout() {
+            localStorage.removeItem('loggedInUser');
+            window.location.href = '../index.html';
+        }
+    </script>
+</body>
+</html>
