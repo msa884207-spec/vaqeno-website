@@ -101,6 +101,11 @@
     <footer>
         <div class="container">
             <p>© 2026 جميع الحقوق محفوظة</p>
+            <div class="visitor-counter">
+                <span>👥 زوار اليوم: <span data-icount="today">0</span></span>
+                <span class="visitor-counter-sep">·</span>
+                <span>إجمالي الزيارات: <span data-icount="total">0</span></span>
+            </div>
         </div>
     </footer>
 
@@ -117,6 +122,23 @@
             localStorage.removeItem('loggedInUser');
             window.location.href = 'index.html';
         }
+    </script>
+
+    <script src="https://icount.kr/c.js?id=msa884207-spec.github.io"></script>
+    <script>
+        (function() {
+            var siteId = 'msa884207-spec.github.io';
+            function fill() {
+                var d = window.iCountData && window.iCountData[siteId];
+                if (!d) return false;
+                var t = document.querySelector('[data-icount="today"]');
+                var n = document.querySelector('[data-icount="total"]');
+                if (t) t.textContent = d.today.pv.toLocaleString('en-US');
+                if (n) n.textContent = d.total.pv.toLocaleString('en-US');
+                return true;
+            }
+            if (!fill()) setTimeout(fill, 2000);
+        })();
     </script>
 </body>
 </html>
