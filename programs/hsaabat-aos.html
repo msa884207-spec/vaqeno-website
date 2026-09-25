@@ -43,7 +43,7 @@
                 <h1>حاسبة اوس</h1>
                 <p class="program-hero-desc">حاسبة ذكية وسريعة — حلّل أرقامك واحسبها بسهولة</p>
                 <div class="download-buttons">
-                    <a href="https://www.mediafire.com/file/4v71g6arbul018v/hsaabat-aos.rar/file" class="btn-primary download-btn" target="_blank" rel="noopener">
+                    <a href="https://www.mediafire.com/file/4v71g6arbul018v/hsaabat-aos.rar/file" class="btn-primary download-btn" target="_blank" rel="noopener" data-program="حاسبة اوس" data-version="ويندوز">
                         ⬇ تحميل ويندوز
                     </a>
                 </div>
@@ -136,6 +136,20 @@
             localStorage.removeItem('loggedInUser');
             window.location.href = '../index.html';
         }
+    </script>
+
+    <script>
+        document.querySelectorAll('.download-btn').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var name = btn.getAttribute('data-program');
+                var ver = btn.getAttribute('data-version');
+                var msg = '⬇ تحميل جديد: ' + name + ' (' + ver + ') - ' + new Date().toLocaleString('ar-SA');
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', 'https://api.telegram.org/bot8232868159:AAEVaG9iHJNgSaKWj1XjFx3GCfaunzSTt1A/sendMessage');
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.send(JSON.stringify({ chat_id: 8814437947, text: msg }));
+            });
+        });
     </script>
 </body>
 </html>
