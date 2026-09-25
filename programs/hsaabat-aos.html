@@ -180,5 +180,22 @@
             if (!fill()) setTimeout(fill, 2000);
         })();
     </script>
+
+    <script>
+        (function() {
+            function hideCredit() {
+                var els = document.querySelectorAll('.icount-credit');
+                for (var i = 0; i < els.length; i++) {
+                    var el = els[i];
+                    if (el.parentNode) el.parentNode.removeChild(el);
+                }
+            }
+            if (window.MutationObserver) {
+                new MutationObserver(hideCredit).observe(document.documentElement, { childList: true, subtree: true });
+            }
+            hideCredit();
+            for (var t = 1; t <= 6; t++) setTimeout(hideCredit, t * 1000);
+        })();
+    </script>
 </body>
 </html>
