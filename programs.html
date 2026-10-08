@@ -1,12 +1,12 @@
-﻿<!DOCTYPE html>
+﻿?<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حلول ذكية - برامج لحل مشاكلك</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ExpiryTracker - متتبع انتهاء الصلاحية</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body class="programs-page">
     <!-- HEADER -->
     <header>
         <div class="container header-flex">
@@ -15,125 +15,103 @@
                     <span class="logo-title">حلول ذكية</span>
                     <span class="logo-sub">برامج لحل مشاكلك</span>
                 </div>
-                <div class="logo-icon"><img src="programs/1790616445323.png" alt="VAQENO" style="width:50px;height:50px;border-radius:8px;object-fit:cover;"></div>
+                <div class="logo-icon">
+                    <img src="../programs/1790616445323.png" alt="VAQENO" style="width:50px;height:50px;border-radius:8px;object-fit:cover;">
+                </div>
             </div>
             <nav>
-                <a href="#home" class="active">الرئيسية</a>
-                <a href="programs.html">البرامج</a>
-                <a href="#about">عن الموقع</a>
-                <a href="#contact">اتصل بنا</a>
+                <a href="../index.html">الرئيسية</a>
+                <a href="../programs.html" class="active">البرامج</a>
+                <a href="../request.html">طلب تصميم</a>
+                <a href="../index.html#contact">اتصل بنا</a>
             </nav>
             <div id="auth-section">
-                <a href="login.html" class="login-btn">تسجيل الدخول <span>👤</span></a>
+                <a href="../login.html" class="login-btn">تسجيل الدخول <span>👤</span></a>
             </div>
         </div>
     </header>
 
-    <!-- HERO -->
-    <section id="home" class="hero">
-        <div class="container hero-flex">
-            <div class="hero-illustration">
-                <!-- الشاشة الرئيسية -->
-                <div class="monitor-wrapper">
-                    <div class="monitor">
-                        <div class="monitor-bezel">
-                            <div class="monitor-screen">
-                                <div class="chart">
-                                    <div class="chart-bar" style="height: 30%;"></div>
-                                    <div class="chart-bar" style="height: 45%;"></div>
-                                    <div class="chart-bar" style="height: 35%;"></div>
-                                    <div class="chart-bar" style="height: 60%;"></div>
-                                    <div class="chart-bar" style="height: 50%;"></div>
-                                    <div class="chart-bar" style="height: 75%;"></div>
-                                    <div class="chart-bar" style="height: 65%;"></div>
-                                    <div class="chart-bar" style="height: 90%;"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="monitor-chin"></div>
-                    </div>
-                    <div class="monitor-neck"></div>
-                    <div class="monitor-base"></div>
+    <!-- PROGRAM HERO -->
+    <section class="program-hero-section">
+        <div class="container program-hero-flex">
+            <div class="program-hero-text">
+                <span class="program-badge">البرنامج الأول</span>
+                <h1>ExpiryTracker</h1>
+                <p class="program-hero-desc">متتبع انتهاء الصلاحية — تابع منتجاتك وتجنب انتهاء الصلاحية بدون ما تنسى</p>
+                <div class="download-buttons">
+                    <a href="https://www.mediafire.com/file/r1yrwzszqvxqalu/VAQENO-Setup-3.007.exe/file" class="btn-primary download-btn" target="_blank" rel="noopener" data-program="ExpiryTracker" data-version="3.007">تحميل مجاني
+                        ⬇ تحميل ويندوز
+                    </a>
+                    <a href="https://www.mediafire.com/file/kclywe3qr4pvtwq/ExpiryTracker-Android-3.007.apk/file" class="btn-primary download-btn download-btn-alt" target="_blank" rel="noopener" data-program="ExpiryTracker" data-version="3.007">تحميل Androidتحميل مجاني
+                        ⬇ تحميل أندرويد (تجريبي)
+                    </a>
                 </div>
-                <!-- الحقيبة الزرقاء -->
-                <div class="briefcase">
-                    <div class="briefcase-top"></div>
-                    <div class="briefcase-body">
-                        <div class="briefcase-handle"></div>
-                        <div class="briefcase-main"></div>
-                        <div class="briefcase-lock"></div>
-                    </div>
-                </div>
-                <!-- الترس -->
-                <div class="gear-icon">⚙️</div>
-                <!-- علامة الصح -->
-                <div class="check-icon">✅</div>
             </div>
-            <div class="hero-text">
-                <h1>حلول ذكية<br><span>لمشاكلك اليومية</span></h1>
-                <p>مجموعة من البرامج والأدوات المصممة لتسهيل عملك<br>وتوفير وقتك وزيادة إنتاجيتك</p>
+            <div class="program-hero-visual">
+                <div class="program-icon-large">⏰</div>
             </div>
         </div>
     </section>
 
-<!-- SERVICE / CTA -->
-    <section id="programs" class="service-section">
+    <!-- FEATURES -->
+    <section class="program-features">
         <div class="container">
-            <div class="cta-split">
-                <div class="cta-col">
-                    <h2>💡 حلول رقمية تصنع الفرق</h2>
-                    <div class="app-showcase">
-                        <div class="app-thumb">
-                            <img src="d.png" alt="برنامج">
-                        </div>
-                        <div class="app-thumb">
-                            <img src="m.webp" alt="برنامج">
-                        </div>
-                    </div>
-                    <div class="cta-col-bottom">
-                        <p>برامج عملية، سهلة الاستخدام، ومصممة لتجعل عملك أسهل.</p>
-                        <a href="programs.html" class="btn-primary">برامجنا</a>
-                    </div>
+            <h2>مميزات البرنامج</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">📦</div>
+                    <h3>تتبع المنتجات</h3>
+                    <p>أضف منتجاتك مع تاريخ انتهاء الصلاحية وتابع حالتها</p>
                 </div>
-                <div class="cta-col cta-form-col">
-                    <div class="cta-col-top">
-                        <h2>💡 عندك فكرة برنامج؟</h2>
-                        <p class="service-subtitle">حوّل فكرتك إلى برنامج يخدم احتياجك</p>
-                        <p class="service-desc">عندك فكرة تطبيق أو برنامج يحل مشكلة معينة؟ أرسل لنا فكرتك، وسنساعدك في تحويلها إلى برنامج عملي ومتكامل.</p>
-                    </div>
-                    <div class="cta-col-bottom">
-                        <a href="request.html" class="btn-primary">اطلب تصميم برنامجك</a>
-                    </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔔</div>
+                    <h3>تنبيهات ذكية</h3>
+                    <p>يتذكّرك قبل انتهاء الصلاحية ب أيام محددة</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📊</div>
+                    <h3>تقارير مفصلة</h3>
+                    <p>اطلع على تقارير المنتجات الصالحة والمنتهية</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💾</div>
+                    <h3>نسخ احتياطي</h3>
+                    <p>احفظ بياناتك واستعدها بسهولة</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="about">
+    <!-- HOW IT WORKS -->
+    <section class="program-how">
         <div class="container">
-            <h2>عن الموقع</h2>
-            <p>نحن فريق متخصص في تطوير البرامج والتطبيقات بمختلف أنواعها. نقدم حلول تقنية مبتكرة تلبي احتياجات عملائنا.</p>
+            <h2>كيف يعمل؟</h2>
+            <div class="how-steps">
+                <div class="how-step">
+                    <span class="step-number">1</span>
+                    <h3>أضف منتجاتك</h3>
+                    <p>أدخل اسم المنتج وتاريخ انتهاء الصلاحية</p>
+                </div>
+                <div class="how-step">
+                    <span class="step-number">2</span>
+                    <h3>حدد التنبيه</h3>
+                    <p>اختر كم يوم قبل انتهاء الصلاحية يجيك تنبيه</p>
+                </div>
+                <div class="how-step">
+                    <span class="step-number">3</span>
+                    <h3>تابع وراقب</h3>
+                    <p>البرنامج يراقب ويجيك تنبيه وقته</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
+    <!-- CTA -->
+    <section class="cta-strip">
         <div class="container">
-            <h2>تواصل معنا</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span>📧</span>
-                    <a href="mailto:vaqenoo@gmail.com">vaqenoo@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <span>📱</span>
-                    <a href="https://wa.me/966548994259" target="_blank">0548994259</a>
-                </div>
-            </div>
-            <div class="social-links">
-                <a href="https://wa.me/966548994259" target="_blank" class="social-link">واتساب</a>
-            </div>
+            <h3>💡 عندك فكرة برنامج؟</h3>
+            <p>حوّل فكرتك إلى برنامج عملي ومتكامل معنا</p>
+            <a href="../request.html" class="btn-primary">اطلب تصميم برنامجك</a>
         </div>
     </section>
 
@@ -155,8 +133,22 @@
 
         function logout() {
             localStorage.removeItem('loggedInUser');
-            window.location.href = 'index.html';
+            window.location.href = '../index.html';
         }
+    </script>
+
+    <script>
+        document.querySelectorAll('.download-btn').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var name = btn.getAttribute('data-program');
+                var ver = btn.getAttribute('data-version');
+                var msg = '⬇ تحميل جديد: ' + name + ' (' + ver + ') - ' + new Date().toLocaleString('ar-SA');
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', 'https://api.telegram.org/bot8232868159:AAEVaG9iHJNgSaKWj1XjFx3GCfaunzSTt1A/sendMessage');
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.send(JSON.stringify({ chat_id: 8814437947, text: msg }));
+            });
+        });
     </script>
 
     <script src="https://icount.kr/c.js?id=msa884207-spec.github.io"></script>
@@ -206,3 +198,4 @@
     </script>
 </body>
 </html>
+
