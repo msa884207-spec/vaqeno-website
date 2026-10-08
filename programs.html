@@ -118,51 +118,5 @@
             window.location.href = 'index.html';
         }
     </script>
-
-    <script src="https://icount.kr/c.js?id=msa884207-spec.github.io"></script>
-    <script>
-        (function() {
-            var siteId = 'msa884207-spec.github.io';
-            function fill() {
-                var d = window.iCountData && window.iCountData[siteId];
-                if (!d) return false;
-                var t = document.querySelector('[data-icount="today"]');
-                var n = document.querySelector('[data-icount="total"]');
-                if (t) t.textContent = d.today.pv.toLocaleString('en-US');
-                if (n) n.textContent = d.total.pv.toLocaleString('en-US');
-                notify(d.total.pv, d.realtime);
-                return true;
-            }
-            function notify(total, realtime) {
-                var key = 'vaqeno_icount_notified';
-                var last = parseInt(localStorage.getItem(key) || '0', 10);
-                if (total <= last) return;
-                localStorage.setItem(key, String(total));
-                var text = '👥 زيارة جديدة! إجمالي الزيارات: ' + total + ' · متصل الآن: ' + realtime;
-                var xhr = new XMLHttpRequest();
-                xhr.open('POST', 'https://api.telegram.org/bot8232868159:AAEVaG9iHJNgSaKWj1XjFx3GCfaunzSTt1A/sendMessage');
-                xhr.setRequestHeader('Content-Type', 'application/json');
-                xhr.send(JSON.stringify({ chat_id: 8814437947, text: text }));
-            }
-            if (!fill()) setTimeout(fill, 2000);
-        })();
-    </script>
-
-    <script>
-        (function() {
-            function hideCredit() {
-                var els = document.querySelectorAll('.icount-credit');
-                for (var i = 0; i < els.length; i++) {
-                    var el = els[i];
-                    if (el.parentNode) el.parentNode.removeChild(el);
-                }
-            }
-            if (window.MutationObserver) {
-                new MutationObserver(hideCredit).observe(document.documentElement, { childList: true, subtree: true });
-            }
-            hideCredit();
-            for (var t = 1; t <= 6; t++) setTimeout(hideCredit, t * 1000);
-        })();
-    </script>
 </body>
 </html>
