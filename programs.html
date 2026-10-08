@@ -1,7 +1,168 @@
-﻿git : fatal: unrecognized argument: --no-pager
-At line:3 char:6
-+ $git=git -C "G:\new\User\Documents\Default Project\my-website" show - ...
-+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (fatal: unrecognized argument: --no-pager:String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>برامجنا - حلول ذكية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="programs-page">
+    <!-- HEADER -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo-area">
+                <div class="logo-text">
+                    <span class="logo-title">حلول ذكية</span>
+                    <span class="logo-sub">برامج لحل مشاكلك</span>
+                </div>
+                <div class="logo-icon">
+                    <svg width="50" height="50" viewBox="0 0 100 100">
+                        <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" fill="none" stroke="#0ea5e9" stroke-width="4"/>
+                        <polygon points="50,20 80,37.5 80,62.5 50,80 20,62.5 20,37.5" fill="#0ea5e9" opacity="0.3"/>
+                        <polygon points="50,30 70,42 70,58 50,70 30,58 30,42" fill="#0ea5e9"/>
+                    </svg>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html">الرئيسية</a>
+                <a href="programs.html" class="active">البرامج</a>
+                <a href="request.html">طلب تصميم</a>
+                <a href="index.html#contact">اتصل بنا</a>
+            </nav>
+            <div id="auth-section">
+                <a href="login.html" class="login-btn">تسجيل الدخول <span>👤</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <h1>برامجنا</h1>
+        <p>برامج عملية، سهلة الاستخدام، ومصممة لتجعل عملك أسهل.</p>
+    </section>
+
+    <!-- PROGRAMS LIST -->
+    <section class="programs-list">
+        <div class="container">
+            <div class="simple-programs-list">
+                <!-- 1 -->
+                <a href="programs/ExpiryTracker.html" class="program-item-link">
+                    <div class="program-item">
+                        <div class="program-icon program-icon-emoji">
+                            <span>⏰</span>
+                        </div>
+                        <div class="program-info">
+                            <h3>ExpiryTracker</h3>
+                            <p>متتبع انتهاء الصلاحية — تابع منتجاتك وتجنب انتهاء الصلاحية بدون ما تنسى</p>
+                            <span class="card-btn">عرض التفاصيل</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- 2 -->
+                <a href="programs/ProductCutterAI.html" class="program-item-link">
+                    <div class="program-item">
+                        <div class="program-icon program-icon-emoji">
+                            <span>✂️</span>
+                        </div>
+                        <div class="program-info">
+                            <h3>ProductCutterAI</h3>
+                            <p>قص الصور بالذكاء الاصطناعي — احذف خلفية المنتجات واحصل على صور احترافية</p>
+                            <span class="card-btn">عرض التفاصيل</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- 3 -->
+                <a href="programs/hsaabat-aos.html" class="program-item-link">
+                    <div class="program-item">
+                        <div class="program-icon program-icon-emoji">
+                            <span>🧮</span>
+                        </div>
+                        <div class="program-info">
+                            <h3>حاسبة اوس</h3>
+                            <p>حاسبة ذكية وسريعة — حلّل أرقامك واحسبها بسهولة</p>
+                            <span class="card-btn">عرض التفاصيل</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-strip">
+        <div class="container">
+            <h3>💡 عندك فكرة برنامج؟</h3>
+            <p>حوّل فكرتك إلى برنامج عملي ومتكامل معنا</p>
+            <a href="request.html" class="btn-primary">اطلب تصميم برنامجك</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>© 2026 جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            var user = JSON.parse(localStorage.getItem('loggedInUser'));
+            var section = document.getElementById('auth-section');
+            if (user && user.fullname) {
+                section.innerHTML = '<span class="welcome-msg">مرحباً ' + user.fullname + '</span> <button class="logout-btn" onclick="logout()">خروج</button>';
+            }
+        })();
+
+        function logout() {
+            localStorage.removeItem('loggedInUser');
+            window.location.href = 'index.html';
+        }
+    </script>
+
+    <script src="https://icount.kr/c.js?id=msa884207-spec.github.io"></script>
+    <script>
+        (function() {
+            var siteId = 'msa884207-spec.github.io';
+            function fill() {
+                var d = window.iCountData && window.iCountData[siteId];
+                if (!d) return false;
+                var t = document.querySelector('[data-icount="today"]');
+                var n = document.querySelector('[data-icount="total"]');
+                if (t) t.textContent = d.today.pv.toLocaleString('en-US');
+                if (n) n.textContent = d.total.pv.toLocaleString('en-US');
+                notify(d.total.pv, d.realtime);
+                return true;
+            }
+            function notify(total, realtime) {
+                var key = 'vaqeno_icount_notified';
+                var last = parseInt(localStorage.getItem(key) || '0', 10);
+                if (total <= last) return;
+                localStorage.setItem(key, String(total));
+                var text = '👥 زيارة جديدة! إجمالي الزيارات: ' + total + ' · متصل الآن: ' + realtime;
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', 'https://api.telegram.org/bot8232868159:AAEVaG9iHJNgSaKWj1XjFx3GCfaunzSTt1A/sendMessage');
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.send(JSON.stringify({ chat_id: 8814437947, text: text }));
+            }
+            if (!fill()) setTimeout(fill, 2000);
+        })();
+    </script>
+
+    <script>
+        (function() {
+            function hideCredit() {
+                var els = document.querySelectorAll('.icount-credit');
+                for (var i = 0; i < els.length; i++) {
+                    var el = els[i];
+                    if (el.parentNode) el.parentNode.removeChild(el);
+                }
+            }
+            if (window.MutationObserver) {
+                new MutationObserver(hideCredit).observe(document.documentElement, { childList: true, subtree: true });
+            }
+            hideCredit();
+            for (var t = 1; t <= 6; t++) setTimeout(hideCredit, t * 1000);
+        })();
+    </script>
+</body>
+</html>
